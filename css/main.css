@@ -71,4 +71,8 @@ body {
 }
 .container .form .clear {
   background-color: #FFF;
+}
+.container .result {
+  margin-top: 20px;
+  font-size: 20px;
 }/*# sourceMappingURL=main.css.map */
