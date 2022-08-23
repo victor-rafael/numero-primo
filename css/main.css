@@ -56,9 +56,8 @@ body {
   display: block;
   padding: 5px;
   border-radius: 4px;
-  border: 0;
   outline: none;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
   -moz-appearance: textfield;
 }
 .container .form input::-webkit-outer-spin-button,
@@ -72,7 +71,23 @@ body {
 .container .form .clear {
   background-color: #FFF;
 }
+.container .form .inputError {
+  border: 2px solid #F00;
+}
+.container .form .error {
+  display: block;
+  margin-bottom: 10px;
+  font-style: italic;
+  font-weight: 400;
+  color: #F00;
+}
 .container .result {
   margin-top: 20px;
   font-size: 20px;
+}
+.container .itsPrime {
+  color: #0F0;
+}
+.container .itsNotPrime {
+  color: #F00;
 }/*# sourceMappingURL=main.css.map */
