@@ -75,13 +75,11 @@ body {
 
     .search {
       background-color: #b9b4b4;
+      width: 169px;
       @extend %button-default
     }
 
-    .clear {
-      background-color: #FFF;
-      @extend %button-default
-    }
+    
 
     .inputError {
       border: 2px solid #F00;
@@ -95,7 +93,6 @@ body {
       color: #F00;
     }
   }
-
   .result {
     margin-top: 20px;
     font-size: 20px;

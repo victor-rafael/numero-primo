@@ -1,4 +1,5 @@
 const form = document.querySelector('#form');
+let result = document.querySelector('.result');
 
 form.onsubmit = (e) => {
   e.preventDefault();
@@ -7,6 +8,7 @@ form.onsubmit = (e) => {
 
   if(!inputNumber.value) {
     inputNumber.classList.add('inputError');
+    result.innerText = '';
 
     let span = inputNumber.nextSibling.nextSibling;
     span.innerText = 'O campo está vazio'
@@ -25,7 +27,7 @@ form.onsubmit = (e) => {
       }
     }
     
-    let result = document.querySelector('.result');
+    
 
     if(divisors === 2) {
       result.classList.remove('itsNotPrime');
@@ -37,7 +39,6 @@ form.onsubmit = (e) => {
       result.innerText = 'Não é Primo';
     }
     
-  }
-  
+  } 
 }
 

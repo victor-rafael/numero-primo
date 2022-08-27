@@ -17,7 +17,7 @@ body {
   align-items: center;
 }
 
-.container .form .clear, .container .form .search {
+.container .form .search {
   color: #000;
   padding: 5px 10px;
   border: 0;
@@ -67,9 +67,7 @@ body {
 }
 .container .form .search {
   background-color: #b9b4b4;
-}
-.container .form .clear {
-  background-color: #FFF;
+  width: 169px;
 }
 .container .form .inputError {
   border: 2px solid #F00;
