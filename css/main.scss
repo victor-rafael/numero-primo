@@ -75,7 +75,7 @@ body {
 
     .search {
       background-color: #b9b4b4;
-      width: 169px;
+      width: 165px;
       @extend %button-default
     }
 
@@ -85,14 +85,15 @@ body {
       border: 2px solid #F00;
     }
 
-    .error {
-      display: block;
-      margin-bottom: 10px;
-      font-style: italic;
-      font-weight: 400;
-      color: #F00;
-    }
+    
   }
+  .error {
+    display: block;
+    font-style: italic;
+    font-weight: 400;
+    color: #FF0;
+  }
+
   .result {
     margin-top: 20px;
     font-size: 20px;

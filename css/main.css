@@ -67,17 +67,16 @@ body {
 }
 .container .form .search {
   background-color: #b9b4b4;
-  width: 169px;
+  width: 165px;
 }
 .container .form .inputError {
   border: 2px solid #F00;
 }
-.container .form .error {
+.container .error {
   display: block;
-  margin-bottom: 10px;
   font-style: italic;
   font-weight: 400;
-  color: #F00;
+  color: #FF0;
 }
 .container .result {
   margin-top: 20px;

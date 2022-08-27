@@ -1,6 +1,12 @@
 const form = document.querySelector('#form');
 let result = document.querySelector('.result');
 
+function removeStyle() {
+  result.classList.remove('itsNotPrime');
+  result.classList.remove('itsPrime');
+  result.classList.remove('error');
+}
+
 form.onsubmit = (e) => {
   e.preventDefault();
 
@@ -8,15 +14,12 @@ form.onsubmit = (e) => {
 
   if(!inputNumber.value) {
     inputNumber.classList.add('inputError');
-    result.innerText = '';
+    removeStyle();
+    result.classList.add('error');
+    result.innerText = 'O campo está vazio';
 
-    let span = inputNumber.nextSibling.nextSibling;
-    span.innerText = 'O campo está vazio'
   } else {
     inputNumber.classList.remove('inputError');
-
-    let span = inputNumber.nextSibling.nextSibling;
-    span.innerText = ''
 
     let divisors = 0
 
@@ -26,18 +29,19 @@ form.onsubmit = (e) => {
         divisors++
       }
     }
-    
-    
+
 
     if(divisors === 2) {
-      result.classList.remove('itsNotPrime');
+      removeStyle();
       result.classList.add('itsPrime');
       result.innerText = 'É Primo';
-    } else {
-      result.classList.remove('itsPrime');
+    } else if(divisors !== 2) {
+      removeStyle();
       result.classList.add('itsNotPrime')
       result.innerText = 'Não é Primo';
-    }
+    } 
+
+    
     
   } 
 }
