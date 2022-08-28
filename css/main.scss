@@ -31,6 +31,8 @@ body {
 
 .container {
   @extend %center;
+  width: 1000px;
+  height: 500px;
   flex-direction: column;
   background-color: #252525;
   color: #FFF;
@@ -40,16 +42,19 @@ body {
     text-align: center;
 
     h2 {
+      font-size: 2.5rem;
       margin-bottom: 20px;
       font-weight: 400;
     }
 
     p {
+      font-size: 1.5rem;
       margin-bottom: 10px;
-      font-weight:300px;
+      font-weight: 300px;
     }
 
     h3 {
+      font-size: 1.4rem;
       margin-top: 30px;
       margin-bottom: 10px;
       font-weight: 400;
@@ -58,35 +63,40 @@ body {
 
   .form {
     text-align: center;
+
     input {
       display: block;
-      padding: 5px;
+      font-size: 1.3rem;
+      width: 280px;
+      padding: 10px;
       border-radius: 4px;
       outline: none;
-      margin-bottom: 2px;
+      margin-bottom: 15px;
       -moz-appearance: textfield;
     }
 
     input::-webkit-outer-spin-button,
     input::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
+      -webkit-appearance: none;
+      margin: 0;
     }
 
     .search {
+      @extend %button-default;
+      font-size: 1rem;
       background-color: #b9b4b4;
-      width: 165px;
-      @extend %button-default
+      width: 280px;
+      height: 34px;
     }
 
-    
 
     .inputError {
       border: 2px solid #F00;
     }
 
-    
+
   }
+
   .error {
     display: block;
     font-style: italic;

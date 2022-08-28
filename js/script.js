@@ -1,5 +1,6 @@
 const form = document.querySelector('#form');
 let result = document.querySelector('.result');
+let inputNumber = document.forms['form']['prime'];
 
 function removeStyle() {
   result.classList.remove('itsNotPrime');
@@ -7,10 +8,24 @@ function removeStyle() {
   result.classList.remove('error');
 }
 
+function isValueEmpty() {
+  console.log(inputNumber.value);
+  if(inputNumber.value.length <= 1) {
+    result.innerText = '';
+  }
+}
+
+
+inputNumber.onkeydown = (e) => {
+  if(e.key === 'Backspace' || e.key === 'Delete') {
+    isValueEmpty();
+  }
+}
+
+
 form.onsubmit = (e) => {
   e.preventDefault();
-
-  let inputNumber = document.forms['form']['prime'];
+  
 
   if(!inputNumber.value) {
     inputNumber.classList.add('inputError');
@@ -28,6 +43,9 @@ form.onsubmit = (e) => {
       if(inputNumber.value % i === 0) {
         divisors++
       }
+      if(divisors === 3) {
+        break;
+      }
     }
 
 
@@ -39,6 +57,7 @@ form.onsubmit = (e) => {
       removeStyle();
       result.classList.add('itsNotPrime')
       result.innerText = 'Não é Primo';
+      
     } 
 
     
