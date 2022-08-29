@@ -9,7 +9,7 @@ function removeStyle() {
 }
 
 function isValueEmpty() {
-  console.log(inputNumber.value);
+  // console.log(inputNumber.value);
   if(inputNumber.value.length <= 1) {
     result.innerText = '';
   }
@@ -17,9 +17,14 @@ function isValueEmpty() {
 
 
 inputNumber.onkeydown = (e) => {
-  if(e.key === 'Backspace' || e.key === 'Delete') {
-    isValueEmpty();
-  }
+  setTimeout(() => {
+    if(e.key === 'Backspace' || e.key === 'Delete') {
+      isValueEmpty();
+    }
+  }, 500);
+
+
+  
 }
 
 
