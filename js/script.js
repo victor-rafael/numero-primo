@@ -10,21 +10,21 @@ function removeStyle() {
 
 function isValueEmpty() {
   // console.log(inputNumber.value);
-  if(inputNumber.value.length <= 1) {
+  if(inputNumber.value.length === 0) {
     result.innerText = '';
   }
 }
 
 
 inputNumber.onkeydown = (e) => {
-  setTimeout(() => {
-    if(e.key === 'Backspace' || e.key === 'Delete') {
-      isValueEmpty();
-    }
-  }, 500);
+  if(inputNumber.value.length > 0) {
+    setTimeout(() => {
+      if(e.key === 'Backspace' || e.key === 'Delete') {
+        isValueEmpty();
+      }
+    }, 100);
+  }
 
-
-  
 }
 
 
