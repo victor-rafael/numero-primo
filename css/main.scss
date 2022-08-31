@@ -105,15 +105,20 @@ body {
   }
 
   .result {
+    width: 280px;
+    height: 20px;
+    text-align: center;
     margin-top: 20px;
     font-size: 20px;
   }
 
   .itsPrime {
+    visibility: visible;
     color: #0F0;
   }
 
   .itsNotPrime {
+    visibility: visible;
     color: #F00;
   }
 }

@@ -88,12 +88,17 @@ body {
   color: #FF0;
 }
 .container .result {
+  width: 280px;
+  height: 20px;
+  text-align: center;
   margin-top: 20px;
   font-size: 20px;
 }
 .container .itsPrime {
+  visibility: visible;
   color: #0F0;
 }
 .container .itsNotPrime {
+  visibility: visible;
   color: #F00;
 }/*# sourceMappingURL=main.css.map */
