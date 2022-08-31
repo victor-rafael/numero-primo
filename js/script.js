@@ -10,16 +10,20 @@ function removeStyle() {
 
 function isValueEmpty() {
   // console.log(inputNumber.value);
-  if(inputNumber.value.length === 0) {
+  if(inputNumber.value.length === 0 || inputNumber.value) {
     result.innerText = '';
   }
 }
 
 
 inputNumber.onkeydown = (e) => {
+  let keys = ['Backspace', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
+
   if(inputNumber.value.length > 0) {
     setTimeout(() => {
-      if(e.key === 'Backspace' || e.key === 'Delete') {
+      keys.forEach(item => e.key === item ? isValueEmpty() : item);
+
+      if(e.key === 'Delete' && inputNumber.value.length === 0) {
         isValueEmpty();
       }
     }, 100);
