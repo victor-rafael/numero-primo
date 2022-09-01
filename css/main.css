@@ -95,12 +95,7 @@ body {
   margin-top: 20px;
   font-size: 20px;
 }
-.container .itsPrime {
-  visibility: visible;
-  font-weight: bold;
-  color: #FFF;
-}
-.container .itsNotPrime {
+.container .after {
   visibility: visible;
   font-weight: bold;
   color: #FFF;

@@ -3,8 +3,7 @@ let result = document.querySelector('.result');
 let inputNumber = document.forms['form']['prime'];
 
 function removeStyle() {
-  result.classList.remove('itsNotPrime');
-  result.classList.remove('itsPrime');
+  result.classList.remove('after');
   result.classList.remove('error');
 }
 
@@ -60,11 +59,11 @@ form.onsubmit = (e) => {
 
     if(divisors === 2) {
       removeStyle();
-      result.classList.add('itsPrime');
+      result.classList.add('after');
       result.innerText = 'É Primo';
     } else if(divisors !== 2) {
       removeStyle();
-      result.classList.add('itsNotPrime')
+      result.classList.add('after')
       result.innerText = 'Não é Primo';
       
     } 
