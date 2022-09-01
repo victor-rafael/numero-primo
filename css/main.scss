@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
 
+$color-backgroundFirst:#152b3c;
+$color-backgroundSecond: #e32d40;
+$color-text: #FFF;
+$color-error: #FF0;
+$color-inputError: #F00;
+$color-search: #b9b4b4;
+$color-buttonText: #000;
+
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +19,7 @@
 body {
   @extend %center;
   height: 100vh;
-  background-color: #152b3c;
+  background-color: $color-backgroundFirst;
 }
 
 %center {
@@ -20,7 +29,7 @@ body {
 }
 
 %button-default {
-  color: #000;
+  color: $color-buttonText;
   padding: 5px 10px;
   border: 0;
   border-radius: 4px;
@@ -34,8 +43,8 @@ body {
   width: 1000px;
   height: 500px;
   flex-direction: column;
-  background-color: #e32d40;
-  color: #FFF;
+  background-color: $color-backgroundSecond;
+  color: $color-text;
   padding: 20px;
 
   .text {
@@ -85,14 +94,14 @@ body {
     .search {
       @extend %button-default;
       font-size: 1rem;
-      background-color: #b9b4b4;
+      background-color: $color-search;
       width: 280px;
       height: 34px;
     }
 
 
     .inputError {
-      border: 2px solid #F00;
+      border: 2px solid $color-inputError;
     }
 
 
@@ -102,7 +111,7 @@ body {
     display: block;
     font-style: italic;
     font-weight: 400;
-    color: #FF0;
+    color: $color-error;
   }
 
   .result {
@@ -115,7 +124,7 @@ body {
     &.after {
       visibility: visible;
       font-weight: bold;
-      color: #FFF;
+      color: $color-text;
     }
   }
 
