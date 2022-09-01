@@ -10,7 +10,7 @@
 body {
   @extend %center;
   height: 100vh;
-  background-color: #0e0c0c;
+  background-color: #152b3c;
 }
 
 %center {
@@ -34,7 +34,7 @@ body {
   width: 1000px;
   height: 500px;
   flex-direction: column;
-  background-color: #252525;
+  background-color: #e32d40;
   color: #FFF;
   padding: 20px;
 
@@ -69,6 +69,7 @@ body {
       font-size: 1.3rem;
       width: 280px;
       padding: 10px;
+      border: 0;
       border-radius: 4px;
       outline: none;
       margin-bottom: 15px;
@@ -114,11 +115,13 @@ body {
 
   .itsPrime {
     visibility: visible;
-    color: #0F0;
+    font-weight: bold;
+    color: #FFF;
   }
 
   .itsNotPrime {
     visibility: visible;
-    color: #F00;
+    font-weight: bold;
+    color: #FFF;
   }
 }
