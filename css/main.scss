@@ -111,11 +111,13 @@ body {
     text-align: center;
     margin-top: 20px;
     font-size: 20px;
+
+    &.after {
+      visibility: visible;
+      font-weight: bold;
+      color: #FFF;
+    }
   }
 
-  .after {
-    visibility: visible;
-    font-weight: bold;
-    color: #FFF;
-  }
+  
 }

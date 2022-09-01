@@ -95,7 +95,7 @@ body {
   margin-top: 20px;
   font-size: 20px;
 }
-.container .after {
+.container .result.after {
   visibility: visible;
   font-weight: bold;
   color: #FFF;
