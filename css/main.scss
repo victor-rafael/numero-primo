@@ -1,45 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
-
-$color-backgroundFirst:#152b3c;
-$color-backgroundSecond: #e32d40;
-$color-text: #FFF;
-$color-error: #FF0;
-$color-inputError: #F00;
-$color-search: #b9b4b4;
-$color-buttonText: #000;
-
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-}
-
-body {
-  @extend %center;
-  height: 100vh;
-  background-color: $color-backgroundFirst;
-}
-
-%center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-%button-default {
-  color: $color-buttonText;
-  padding: 5px 10px;
-  border: 0;
-  border-radius: 4px;
-  text-transform: uppercase;
-  font-weight: 700;
-  cursor: pointer;
-}
+@import 'variables';
+@import 'base';
+@import 'mixins';
+@import 'extends';
 
 .container {
-  @extend %center;
+  @include center();
   width: 1000px;
   height: 500px;
   flex-direction: column;
@@ -103,8 +68,6 @@ body {
     .inputError {
       border: 2px solid $color-inputError;
     }
-
-
   }
 
   .error {
