@@ -31,7 +31,7 @@ Os usuários deverão:
 ### Link
 
 
-- link do site: [clique aqui](https://your-live-site-url.com)
+- link do site: [clique aqui](https://victor-rafael.github.io/numero-primo/)
 
 ## Construção
 
